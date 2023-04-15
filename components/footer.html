@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Componente Footer</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Mi sitio web</h1>
+      <p>Bienvenido a mi sitio web.</p>
+    </div>
+
+    <p>A new <code>&lt;hello-world&gt;</code> Web Component...</p>
+
+<hello-world></hello-world>
+  </body>
+</html>
+<style>
+hello-world {
+    font-weight: bold;
+    color: red;
+  }
+  </style>
+
+  <script>
+    // web component
+class HelloWorld extends HTMLElement {
+  
+  // connect component
+  connectedCallback() {
+    this.textContent = 'Hello World!';
+  }
+  
+}
+
+// register component
+customElements.define( 'hello-world', HelloWorld );
+  </script>
