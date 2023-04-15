@@ -43,18 +43,30 @@
 <body>
     <!-- Contact bar -->
     <div class="container-fluid" id="contact-navbar">
-        <div class="row justify-content-between py-2">
-            <div class="col-5">
-                <p class="m-0"><strong>Download </strong> demo</p>
-            </div>
-            <div class="col-5">
-                <p class="m-0"><strong>Download </strong> demo</p>
+        <div class="row justify-content-center py-2">
+            <div class="col-11 col-md-8">
+                <div class="row justify-content-between">
+                    <div class="col-5">
+                        <p class="m-0"><strong>Download </strong> demo</p>
+                    </div>
+                    <div class="col-3 align-content-end justify-content-around">
+                        <a href="https://twitter.com/aztecataxes" target="_blank">
+                            <img src="rsc/icons/twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.facebook.com/aztecataxsystems/" target="_blank">
+                            <img src="rsc/icons/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="https://www.instagram.com/aztecataxsystems/" target="_blank">
+                            <img src="rsc/icons/instagram.svg" alt="instagram" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar bg-light navbar-expand-sm navbar-light justify-content-center" id="nav-bar">
+    <nav class="navbar bg-light navbar-expand-sm navbar-light text-center" id="nav-bar">
         <!-- Logo -->
         <div id="logo">
             <a href="index.html" class="navbar-brand">
@@ -87,10 +99,12 @@
 
     <!-- Contenedor principal-->
     <div class="container-fluid p-0">
+
         <div id="carouselExampleControls" class="carousel slide p-0" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="rsc/home/carousel/banner1.jpg" class="d-block w-100" alt="...">
+                    <p>sjfhkjsdhkj</p>
                 </div>
                 <div class="carousel-item">
                     <img src="rsc/home/carousel/banner2.jpg" class="d-block w-100" alt="...">
@@ -106,7 +120,19 @@
             </a>
         </div>
 
-
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-8">
+                <div class="row align-items-center cont-info  p-5">
+                    <div class="col-12 col-md-6">
+                        <h2 class="titulo"><b>CALL US!</b></h2>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p><b>Phone: </b><br />714-363-0006</p>
+                        <p><b>Email: </b><br />support@aztecataxsystems.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -176,3 +202,20 @@
 </body>
 
 </html>
+
+<style>
+    .cont-info {
+        background: #f2b138;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        font-size: 3em;
+    }
+
+    .cont-info {
+        font-size: 1.3em;
+    }
+</style>

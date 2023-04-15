@@ -36,22 +36,34 @@
 <body>
     <!-- Contact bar -->
     <div class="container-fluid" id="contact-navbar">
-        <div class="row justify-content-between py-2">
-            <div class="col-5">
-                <p class="m-0"><strong>Download </strong> demo</p>
-            </div>
-            <div class="col-5">
-                <p class="m-0"><strong>Download </strong> demo</p>
+        <div class="row justify-content-center py-2">
+            <div class="col-11 col-md-8">
+                <div class="row justify-content-between">
+                    <div class="col-5">
+                        <p class="m-0"><strong>Download </strong> demo</p>
+                    </div>
+                    <div class="col-3 align-content-end justify-content-around">
+                        <a href="https://twitter.com/aztecataxes" target="_blank">
+                            <img src="../rsc/icons/twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.facebook.com/aztecataxsystems/" target="_blank">
+                            <img src="../rsc/icons/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="https://www.instagram.com/aztecataxsystems/" target="_blank">
+                            <img src="../rsc/icons/instagram.svg" alt="instagram" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar bg-light navbar-expand-sm navbar-light" id="nav-bar">
+    <nav class="navbar bg-light navbar-expand-sm navbar-light justify-content-center" id="nav-bar">
         <!-- Logo -->
         <div id="logo">
-            <a href="index.html" class="navbar-brand">
-                <img width="20%" src="../rsc/logo/logo.png" alt="ATS Logo" />
+            <a href="../index.html" class="navbar-brand">
+                <img width="100%" src="../rsc/logo/logo.png" alt="ATS Logo" />
             </a>
         </div>
 
@@ -61,10 +73,9 @@
         </button>
 
         <!-- Options Menu -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-            <ul class="navbar nav bar-expand-sm justify-content-end" id="options">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <div class="collapse navbar-collapse col-10" id="collapsibleNavbar">
+            <ul class="navbar nav bar-expand-sm" id="options">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="software.html">Software</a></li>
                 <li class="nav-item"><a class="nav-link" href="hardware.html">Hardware</a></li>
                 <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
@@ -75,16 +86,60 @@
         </div>
     </nav>
 
+
+
     <!-- Animación -->
     <script>AOS.init();</script>
+
 
 
     <!-- Contenedor principal-->
     <div class="container-fluid p-0 mt-5">
         <div class="row content">
-            <div class="col-12 col-md-6 p-5">
 
+            <div class="col-12 col-md-6 p-5">
+                <h2><b>Contact us!</b></h2>
+                <h6 class="mb-3">Our team is always avaliable to talk to you!</h6>
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="select"><b>Why are you contacting us today?</b></label> :</label>
+                                <select class="form-control" id="select">
+                                    <option>General Inquiry</option>
+                                    <option>ATS Tax Software Demo</option>
+                                    <option>Tax Consulting</option>
+                                    <option>Business Software</option>
+                                    <option>Cyber Security</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="campo1"><b>Name:</b></label>
+                                <input type="text" class="form-control" id="campo1" placeholder="Jhon Smith">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="campo2"><b>Email</b></label>
+                                <input type="text" class="form-control" id="campo2" placeholder="abce@googl.com">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="form-group">
+                                <label for="textarea"><b>Message:</b></label>
+                                <textarea class="form-control" id="textarea" rows="3"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12 text-right">
+                            <button type="submit" class="btn btn-primary">Send!</button>
+                        </div>
+                    </div>
+                </form>
             </div>
+
             <div class="col-12 col-md-6 col-info p-5">
                 <h2 class="mb-3">Our contact information</h2>
                 <p><b>Phone:</b> <br />
@@ -111,7 +166,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row p-0" style="height: 500px">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.8505288353285!2d-117.83470528442113!3d33.84196513622873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd994524df2ad%3A0x8bd589fa55348c9c!2sAzteca%20Tax%20Systems!5e0!3m2!1ses!2sar!4v1679419561350!5m2!1ses!2sar"
                 height="500px" style="border: 0" allowfullscreen="" loading="lazy"
@@ -122,96 +177,64 @@
     <!-- Footer -->
     <div class="container-fluid p-0" class="footer">
         <footer class="p-5">
-            <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-                    <h6>ATS Software</h6>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link
-                                p-0 text-body-secondary">ATS
-                                Software</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Pricing</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">About</a>
-                        </li>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-2 mb-3">
+                    <a href="pages/software.html">
+                        <h5>ATS Software</h5>
+                    </a>
+                    <ul class="nav d-none d-md-flex">
+                        <li class="mb-2">ATS 1040 Desktop</li>
+                        <li class="mb-2">ATS 1040 Online</li>
+                        <li class="mb-2">ATS Corporations</li>
+                        <li class="mb-2">ATS Bookkeeping</li>
+                        <li class="mb-2">ATS Payroll</li>
                     </ul>
                 </div>
 
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Pricing</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">About</a>
-                        </li>
+                <div class="col-12 col-md-2 mb-3">
+                    <a href="pages/training.html">
+                        <h5>Training</h5>
+                    </a>
+                    <ul class="nav d-none d-md-flex">
+                        <li class="mb-2">ATS Online 20hrs Renewal Course</li>
+                        <li class="mb-2">ATS Classroom 20hrs Renewal Course</li>
+                        <li class="mb-2">ATS Online 60hrs Certification Course</li>
+                        <li class="mb-2">ATS Classroom 60hrs Certification Course</li>
                     </ul>
                 </div>
 
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Features</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">Pricing</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link
-                                p-0 text-body-secondary">About</a>
-                        </li>
+                <div class="col-12 col-md-3 mb-3">
+                    <a href="pages/software.html">
+                        <h5>Business Software</h5>
+                    </a>
+                    <ul class="nav d-none d-md-flex">
+                        <li class="mb-2">ATS Online Backup</li>
+                        <li class="mb-2">ATS Antivirus</li>
+                        <li class="mb-2">ATS Office365</li>
+                        <li class="mb-2">ATS Remote Desktop</li>
                     </ul>
                 </div>
 
-                <div class="col-md-5 offset-md-1 mb-3">
+                <div class="col-md-4 mb-3">
                     <form>
                         <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email
-                                address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        <div class="row">
+                            <div class="col-8">
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email
+                                ">
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between
-                py-4 my-4 border-top">
+            <div class="d-flex flex-column flex-sm-row justify-content-center
+                pt-4 mt-4 border-top">
                 <p>&copy; 2023 Azteca Tax services. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3">
-                        <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter" />
-                            </svg></a>
-                    </li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook" />
-                            </svg></a></li>
-                </ul>
+
             </div>
         </footer>
     </div>
