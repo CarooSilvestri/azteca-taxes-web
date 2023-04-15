@@ -1,3 +1,10 @@
+<!-- 
+    AZTECA TAX WEB
+    VERSION: 1.0
+    ÚLTIMA ACTUALIZACIÓN: 14/04/2023
+    ESTADO: Terminado
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -31,6 +38,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -45,6 +53,7 @@
             </div>
         </div>
     </div>
+
     <!-- Nav Bar -->
     <nav class="navbar bg-light navbar-expand-sm navbar-light justify-content-center" id="nav-bar">
         <!-- Logo -->
@@ -76,32 +85,14 @@
     <!-- Animación -->
     <script>AOS.init();</script>
 
+    <!-- Banner -->
+    <header class="sectionTitle">
+    </header>
 
     <!-- Contenedor principal-->
-    <div class="container-fluid p-0">
-        <!-- Banner -->
-        <header class="sectionTitle">
-            <h1>How can we help you today?</h1>
-            <h2 class="text-center">We support you in every step through the process.</h2>
-        </header>
+    <div class="container p-0" id="container">
 
-        <div class="row justify-content-center text-center">
-            <div class="col-11 col-md-8 mt-5 mb-5">
-                <h2>We offer remote desktop assistance!</h2>
-                <h3 class="mt-4">
-                    Our specialists can connect to your computer and help you with our
-                    software.
-                </h3>
-
-                <a href="https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe" class="btn btn-primary mt-5"
-                    tabindex="-1" role="button">
-                    Download Teamviewer
-                </a>
-
-            </div>
-        </div>
     </div>
-
     <!-- Footer -->
     <div class="container-fluid p-0" class="footer">
         <footer class="p-5">
@@ -166,6 +157,7 @@
             </div>
         </footer>
     </div>
+    <script src="../data/licenses.js"></script>
 </body>
 
 </html>
@@ -173,9 +165,22 @@
 <style>
     .sectionTitle {
         padding: 10%;
-        background-image: url(../rsc/banners_sections/support.jpg);
+        background-image: url(../rsc/banners_sections/licencing.jpg);
         background-size: cover;
         background-position-y: center;
         color: white;
+    }
+
+    .cuadro {
+        box-shadow: 10px 10px 20px rgba(199, 199, 199, 0.2),
+            -10px -10px 20px rgba(199, 199, 199, 0.2),
+            10px -10px 20px rgba(255, 255, 255, 0.9),
+            -10px 10px 25px rgba(199, 199, 199, 0.9),
+            inset -1px 1px 2px rgba(255, 255, 255, 0.3),
+            inset 1px -1px 2px rgba(199, 199, 199, 0.5);
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
     }
 </style>

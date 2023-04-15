@@ -1,44 +1,27 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: whitesmoke;
-}
+body { background-color: whitesmoke;}
 
 h1 { 
-    
-    color: #A62E2E;
+    color: white;
+    font-size: 55pt;
     font-weight: bold;
+    text-align: center;
 }
 
-h3 {
-
-    margin: 2% 0 2% 0;  
-}
-
-h5 {
-
-    font-weight: bold;
-}
+h5 { font-weight: bold; }
 
 a {
-
     text-decoration: none;
     color: black
 }
 
-ul {
-
-    list-style: none;
-}
-
-span {
-
-    vertical-align: middle;
-}
+ul { list-style: none; }
 
 header {
 
@@ -56,28 +39,11 @@ header {
     color: white;
 }
 
-#nav-bar {
-    
-    padding: 2% 8%;
-}
-
-#logo {
-
-    width: 70%;
-}
-
-#options {
-
-    width: 100%;
-}
-
 .nav-item {
 
-    padding: 1%;
     height: fit-content;
     font-size: 15px;
     color: black;
-    text-transform: uppercase;
 }
 
 .nav-item:after {
@@ -303,11 +269,6 @@ header {
 
 
 /* ------------- PRODUCTS ------------- */
-#cont-productos {
-
-    padding:0;    
-    margin: 0 auto;
-}
 
 #cont-menu-tarjetas {
 

@@ -1,0 +1,223 @@
+<!-- 
+    AZTECA TAX WEB
+    VERSION: 1.0
+    ÚLTIMA ACTUALIZACIÓN: 14/04/2023
+    ESTADO: Terminado
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Azteca Tax Systems</title>
+
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <link rel="icon" type="image/x-icon" href="../rsc/logo/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/global.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Contact bar -->
+    <div class="container-fluid" id="contact-navbar">
+        <div class="row justify-content-between py-2">
+            <div class="col-5">
+                <p class="m-0"><strong>Download </strong> demo</p>
+            </div>
+            <div class="col-5">
+                <p class="m-0"><strong>Download </strong> demo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav class="navbar bg-light navbar-expand-sm navbar-light justify-content-center" id="nav-bar">
+        <!-- Logo -->
+        <div id="logo">
+            <a href="index.html" class="navbar-brand">
+                <img width="100%" src="../rsc/logo/logo.png" alt="ATS Logo" />
+            </a>
+        </div>
+
+        <!-- Button toggle colapsed -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Options Menu -->
+        <div class="collapse navbar-collapse col-10" id="collapsibleNavbar">
+            <ul class="navbar nav bar-expand-sm" id="options">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="software.html">Software</a></li>
+                <li class="nav-item"><a class="nav-link" href="hardware.html">Hardware</a></li>
+                <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="licensing.html">Licensing</a></li>
+                <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animación -->
+    <script>AOS.init();</script>
+
+    <!-- Banner -->
+    <header class="sectionTitle">
+        <h1>Hardware</h1>
+    </header>
+
+
+
+
+    <!-- Contenedor principal-->
+    <div class="container p-0" id="container">
+        <div class="row mt-5">
+            <div class="col-6 col-md-2">
+                <button size="lg" class="btn btn-warning" id="todos">All items</button>
+            </div>
+            <div class="col-6 col-md-2">
+                <button size="lg" class="btn btn-warning" id="signa">Signature pads</b-button>
+            </div>
+            <div class="col-6 col-md-2">
+                <b-button size="lg" class="btn btn-warning" id="scanners">Scanners</b-button>
+            </div>
+            <div class="col-6 col-md-2">
+                <b-button size="lg" class="btn btn-warning" id="workstations">Work Stations</b-button>
+            </div>
+            <div class="col-6 col-md-2">
+                <b-button size="lg" class="btn btn-warning" id="monitors">Monitors</b-button>
+            </div>
+            <div class="col-6 col-md-2">
+                <b-button size="lg" class="btn btn-warning" id="laptops">Laptops</b-button>
+            </div>
+        </div>
+        <div class="row" class="mt-5" id="prods">
+
+        </div>
+        <div id="modal">
+            <div class="container-fluid" id="modal-content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xl-6" id="col-modal-img">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-xl-6" id="col-modal-text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid p-0" class="footer">
+        <footer class="p-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-2 mb-3">
+                    <a href="software.html">
+                        <h5>ATS Software</h5>
+                    </a>
+                    <ul class="nav d-none d-md-flex">
+                        <li class="mb-2">ATS 1040 Desktop</li>
+                        <li class="mb-2">ATS 1040 Online</li>
+                        <li class="mb-2">ATS Corporations</li>
+                        <li class="mb-2">ATS Bookkeeping</li>
+                        <li class="mb-2">ATS Payroll</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-2 mb-3">
+                    <a href="training.html">
+                        <h5>Training</h5>
+                    </a>
+                    <ul class="nav d-none d-md-flex">
+                        <li class="mb-2">ATS Online 20hrs Renewal Course</li>
+                        <li class="mb-2">ATS Classroom 20hrs Renewal Course</li>
+                        <li class="mb-2">ATS Online 60hrs Certification Course</li>
+                        <li class="mb-2">ATS Classroom 60hrs Certification Course</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3 mb-3">
+                    <a href="software.html">
+                        <h5>Business Software</h5>
+                    </a>
+                    <ul class="nav d-none d-md-flex">
+                        <li class="mb-2">ATS Online Backup</li>
+                        <li class="mb-2">ATS Antivirus</li>
+                        <li class="mb-2">ATS Office365</li>
+                        <li class="mb-2">ATS Remote Desktop</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <div class="row">
+                            <div class="col-8">
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email
+                                ">
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center
+                pt-4 mt-4 border-top">
+                <p>&copy; 2023 Azteca Tax services. All rights reserved.</p>
+
+            </div>
+        </footer>
+    </div>
+    <script src="../data/hardware.js"></script>
+</body>
+
+</html>
+
+<style>
+    .sectionTitle {
+        padding: 10%;
+        background-image: url(../rsc/banners_sections/hardware.jpg);
+        background-size: cover;
+        background-position-y: center;
+        color: white;
+    }
+
+    .cuadro {
+        box-shadow: 10px 10px 20px rgba(199, 199, 199, 0.2),
+            -10px -10px 20px rgba(199, 199, 199, 0.2),
+            10px -10px 20px rgba(255, 255, 255, 0.9),
+            -10px 10px 25px rgba(199, 199, 199, 0.9),
+            inset -1px 1px 2px rgba(255, 255, 255, 0.3),
+            inset 1px -1px 2px rgba(199, 199, 199, 0.5);
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+</style>
