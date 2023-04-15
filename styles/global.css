@@ -122,83 +122,11 @@ header {
 /* ------------- PRODUCTOS SECTION ------------- */
 
 .card-prod {
-
     height: 300px;
     background-size: cover;
     background-position: center;
     margin: 3%;
 }
-
-#placa {
-
-    background-image: url(rsc/Módulo\ SLC80\ -\ 2.jpg);
-}
-
-#tablero {
-    
-    background-image: url(rsc/Tablero\ para\ escalera\ mecánica\ -\ 22.jpg);
-}
-
-#display {
-
-    background-image: url(rsc/Display\ matriz\ de\ leds\ rojo\ -\ 13.jpg);
-}
-
-.overlay {
-
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-}
-
-.card-prod:hover .overlay {
-
-    opacity: 1;
-}
-
-.cont-info {
-
-    padding: 5%;
-    width: 90%;
-    margin: 50% auto;
-    color: white;
-    font-size: 35px;
-}
-
-.btn-masprod-n {
-
-    width: 100%;
-    margin-top: 2%;
-    background-color: rgb(228, 228, 228);
-    padding: 3%;
-    border: none;   
-    font-size: 18px;
-    text-align: center;
-}
-
-.btn-masprod-n:hover {
-
-    font-weight: bold;
-    background-color: gainsboro;
-} 
-
-.btn-masprod-n span {
-
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    color: black ;
-    position: relative;
-    transition: 0.5s;
-}
-
 
 /* ------------- US SECTION ------------- */
 
@@ -342,20 +270,18 @@ header {
     width: 60%;
 } 
 
-#cont-prod h1 {
-
-    padding: 1vw;
-}
 
 #card-producto {
 
     height: fit-content;
-    background-color: #e4e4e4;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
     text-align: center;
-    margin: 2% 4% 2% 4%;
     padding: 0;
     padding-bottom: 2%;
     animation: zoom-in-card 0.5s;
+    align-self: stretch;
 }
 
 .cont-img {
@@ -385,10 +311,9 @@ header {
 }
 
 .text-card {
-    
-    padding: 5%;
-    margin-top: 5%; 
-    height: 50px;
+    margin: auto;
+    margin-top: 2%;
+    width: 85%;    
 }
 
 .btn-masprod {
@@ -466,7 +391,7 @@ header {
     flex-direction: row;
 }
 
-#div_tit h1 {
+#div_tit h2 {
 
     width: 95%;
 }

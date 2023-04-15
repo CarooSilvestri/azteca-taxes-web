@@ -55,7 +55,6 @@ var $hardware = [
         "Windows 10 Home for a familiar and productive computing experience"
       ]
     },
-    "specs": [],
     "price": "$795"
   },
   {
@@ -71,8 +70,6 @@ var $hardware = [
         "Up to 8 GB DDR4"
       ]
     },
-
-    "specs": [],
     "price": "$795"
   },
   {
@@ -112,7 +109,6 @@ var $hardware = [
         }
       ]
     },
-    "specs": [],
     "price": "$795"
   },
   {
@@ -121,7 +117,6 @@ var $hardware = [
     "type": "signature_pads",
     "description": {
       "overview": "SigLite LCD 1×5 (T-L460-HSB-R) is Topaz’s low-cost, pressure-sensitive electronic signature capture pad with an LCD display and USB connection.",
-      "features": []
     },
     "price": "$190"
   },
@@ -131,9 +126,7 @@ var $hardware = [
     "type": "signature_pads",
     "description": {
       "overview": "With this model series, the signature is only viewable on the computer screen. If your application requires customers to view the signature on the pad’s screen, see the SigLite LCD 1×5.",
-      "features": []
     },
-    "specs": [],
     "price": "$125"
   },
   {
@@ -142,18 +135,15 @@ var $hardware = [
     "type": "scanners",
     "description": {
       "overview": "We provide support for these certified handheld scanners, you are able to capture the taxpayer’s source documents and information to associate them with the appropriate tax return ATS tax Software. Get the power of a bar code scanner, digital camera and document scanner in a single, cost-effective device.",
-      "features": []
     },
-    "specs": [],
     "price": "$349.99"
   }
 ]
 
 
 $(document).ready(function() {
-  var contProds = document.getElementById("container")
   var prods = document.getElementById("prods")
-  cargar_productos($hardware, contProds)
+  cargar_productos($hardware, prods)
   cargar_opciones($hardware, prods) 
 })
 
@@ -172,7 +162,7 @@ function filtrar(data, tipo_prod="todos", container) {
   for (var clave in data) {
     if (data[clave].type == tipo_prod) {
       crear_titulo(container, tipo_prod)
-      crear_html(data[tipo_prod], container)
+      crear_html(data[clave], container)
     } 
   }  
 }
@@ -190,35 +180,55 @@ function crear_html(prod, container) {
 
   var card = document.createElement("div")
   card.setAttribute("id", "card-producto")
-  card.setAttribute("class", "col-sm-12 col-md-3 col-xl-3")
+  card.setAttribute("class", "col-10 col-md-3 m-2")
    
   var img_cont = document.createElement("div")
   img_cont.setAttribute("class", "cont-img")
 
-   var img_prod = set_img(prod)
-   img_cont.appendChild(img_prod)
-   card.appendChild(img_cont)
+  var img_prod = set_img(prod)
+  img_cont.appendChild(img_prod)
+  card.appendChild(img_cont)
+
+
+  var badge = document.createElement("span")
+  badge.setAttribute('class', 'badge text-bg-secondary mb-2')
+  badge.innerHTML += prod.type
 
   var texto = document.createElement("div")
   texto.setAttribute("class", "text-card")
 
   var titulo = document.createElement("h2")
-  texto.appendChild(titulo)
-
-   titulo.innerHTML += prod.name;
+  titulo.innerHTML += prod.name;
       
-   var btn_prod = document.createElement("button")
-   btn_prod.innerText = "Ver más"
-   btn_prod.setAttribute("class", "btn-masprod")
-   btn_prod.setAttribute("id", "btn-masprod")
+  var precio = document.createElement("h2")
+  precio.innerHTML += prod.price;
+  precio.setAttribute("style", "font-weight: 500")
+
+  texto.appendChild(badge)
+  texto.appendChild(titulo)
+  texto.appendChild(precio)
+
+   
+  var cont_btn = document.createElement("div")
+  cont_btn.setAttribute("class", "d-flex justify-content-around mt-2")
+
+   var btn_see_more = document.createElement("button")
+   btn_see_more.innerText = "See more"
+   btn_see_more.setAttribute("class", "btn btn-secondary btn-sm")
+   btn_see_more.setAttribute("id", "btn-masprod")
    let pasar_prod = prod
-   btn_prod.addEventListener("click", (e) => {
-     
+   btn_see_more.addEventListener("click", (e) => {
      abrir_modal(pasar_prod) 
    })
+   
+   var btn_prod = document.createElement("button")
+   btn_prod.innerText = "Buy"
+   btn_prod.setAttribute("class", "btn btn-primary btn-sm")
 
    card.appendChild(texto)
-   card.appendChild(btn_prod)
+   cont_btn.appendChild(btn_see_more)
+   cont_btn.appendChild(btn_prod)
+   card.appendChild(cont_btn)
    container.appendChild(card)
    
 }
@@ -228,7 +238,6 @@ function crear_html(prod, container) {
 
    /* Obtengo los divs necesarios */
    var modal = document.getElementById("modal")
-   var div_contenido = document.getElementById("modal-content")
    var col_imagen = document.getElementById("col-modal-img")
    var col_informacion = document.getElementById("col-modal-text")
 
@@ -254,8 +263,7 @@ function crear_html(prod, container) {
 
 /* Agrego imagen */
  function agregar_columna_imagen(elem, col_imagen) {
-
-   col_imagen.innerHTML=" "
+  col_imagen.innerHTML =""
    var img = set_img(elem)
    col_imagen.appendChild(img)
  }
@@ -269,10 +277,55 @@ function crear_html(prod, container) {
    /* Agrego título */
    var row_titulo = document.createElement("div")
    row_titulo.setAttribute("class", "row")
-   titulo_modal(row_titulo, prod)
+   titulo_modal(row_titulo, prod.name)
    col_informacion.appendChild(row_titulo)
 
    /* Armo la descripción del producto */  
+   var description = document.createElement("div")
+   description.setAttribute('class', 'row px-5')
+   description.innerHTML += prod.description.overview
+   col_informacion.appendChild(description)  
+
+   if (prod.description.features) {
+   var features = document.createElement("div")
+   features.setAttribute('class', 'row px-5 mt-3')
+   var t = document.createElement('h5')
+   t.innerHTML = 'Features'
+    features.appendChild(t)
+   
+   for (var elem in prod.description.features) {
+    var feat = document.createElement("p")
+    feat.innerHTML += "- " +prod.description.features[elem]
+    features.appendChild(feat)
+   }   
+  
+   col_informacion.appendChild(features) 
+  }
+
+   if (prod.specs) {
+    var specs = document.createElement("div")
+    specs.setAttribute('class', 'row px-5 mt-3')
+    var t = document.createElement('h5')
+   t.innerHTML = 'Specs:'
+    specs.appendChild(t)
+
+   for (var elem in prod.specs) {
+    var sp = document.createElement("div")
+    sp.innerHTML =`<p><strong>${prod.specs[elem].title}<strong></p>`
+      sp.innerHTML +=`<p>${prod.specs[elem].desc}</p>` 
+    specs.appendChild(sp)
+   }  
+
+   col_informacion.appendChild(specs) 
+   }
+  
+   var btn = document.createElement("div")
+   btn.setAttribute('class', 'row px-5 mt-3 justify-content-center')
+   var btn_prod = document.createElement("button")
+   btn_prod.innerText = "Buy"
+   btn_prod.setAttribute("class", "btn btn-primary btn-lg")
+   btn.appendChild(btn_prod)
+   col_informacion.appendChild(btn) 
  }
 
 /*Agrego título del modal y el span del boton cerrado */
@@ -280,7 +333,7 @@ function crear_html(prod, container) {
 
    var div_tit = document.createElement("div")
    div_tit.setAttribute("id", "div_tit")
-   crear_titulo(div_tit, prod.name)
+   crear_titulo(div_tit, prod)
    
    /* Botón de cerrado */
    var span = document.createElement("span")
@@ -294,18 +347,19 @@ function crear_html(prod, container) {
  function set_img(prod) {
 
   var img_prod = document.createElement("img")
-  img_prod.setAttribute("src", "rsc/"+ prod.name + " - " + prod.id +".jpg")
+  img_prod.setAttribute("src", "../rsc/blanc.jpg")
   img_prod.setAttribute("width", "100%")  
   img_prod.setAttribute("class", "img-fluid")
-  img_prod.setAttribute("alt", prod.name)
+  img_prod.setAttribute("alt", prod)
   return img_prod
 }
 
-function crear_titulo(container, tipo) {
+function crear_titulo(container, prod) {
     
   container.innerHTML = ""
-  var titulo = document.createElement("h1")
-  titulo.setAttribute("class", "h1")
+  var titulo = document.createElement("h2")
+  titulo.setAttribute("class", "h2")
   titulo.style.textTransform = "capitalize"
+  titulo.innerHTML += prod
   container.append(titulo)
 }
