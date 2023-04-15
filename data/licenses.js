@@ -35,12 +35,15 @@ function cargar_licencias(data, container) {
     box.setAttribute('data-aos', 'fade-in')
 
     const imageBox = document.createElement("div")
-    imageBox.classList.add("col-12", "col-md-5")
+    imageBox.classList.add("col-12", "col-md-4")
     imageBox.innerHTML = `<img src="../rsc/patents/${data[elem].name}.png" />`
 
     const infoBox = document.createElement("div")
-    infoBox.classList.add("col-12", "col-md-5")
-    infoBox.innerHTML = `<p>${data[elem].description}</p>`
+    infoBox.classList.add("col-12", "col-md-6")
+    infoBox.innerHTML = `<p>${data[elem].description}</p>
+    <p><b>${data[elem].subtitle}</b></p>
+    <p class="call">Call us now and learn how to get your CTEC with our help!<br>
+    714-363-0006</p>`
     box.append(imageBox)
     box.append(infoBox)
     container.append(box)

@@ -47,7 +47,7 @@
             <div class="col-11 col-md-8">
                 <div class="row justify-content-between">
                     <div class="col-5">
-                        <p class="m-0"><strong>Download </strong> demo</p>
+                        <p class="m-0"><strong>DOWNLOAD </strong> DEMO!</p>
                     </div>
                     <div class="col-3 align-content-end justify-content-around">
                         <a href="https://twitter.com/aztecataxes" target="_blank">
@@ -104,7 +104,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="rsc/home/carousel/banner1.jpg" class="d-block w-100" alt="...">
-                    <p>sjfhkjsdhkj</p>
+
                 </div>
                 <div class="carousel-item">
                     <img src="rsc/home/carousel/banner2.jpg" class="d-block w-100" alt="...">
@@ -120,16 +120,38 @@
             </a>
         </div>
 
-        <div class="row justify-content-center text-center mb-5">
-            <div class="col-8">
-                <div class="row align-items-center cont-info  p-5">
-                    <div class="col-12 col-md-6">
-                        <h2 class="titulo"><b>CALL US!</b></h2>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <p><b>Phone: </b><br />714-363-0006</p>
-                        <p><b>Email: </b><br />support@aztecataxsystems.com</p>
-                    </div>
+        <h1 class="my-5" style="color:#489cbd">Our offer</h1>
+
+        <div class="row p-5" id="banner1" data-aos="fade-left">
+            <div class="col-6 contenido">
+                <h2 class="mb-4" id="titulo-b1"></h2>
+                <div id="cont-b1"></div>
+            </div>
+        </div>
+        <div class="row p-5" id="banner2" data-aos="fade-right">
+            <div class="col-6 contenido">
+                <h2 class="mb-4" id="titulo-b2"></h2>
+                <div id="cont-b2"></div>
+
+            </div>
+        </div>
+        <div class="row p-5" id="banner3" data-aos="fade-left">
+            <div class="col-6 contenido">
+                <h2 class="mb-4" id="titulo-b3"></h2>
+                <div id="cont-b3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center text-center my-5">
+        <div class="col-8">
+            <div class="row align-items-center cont-info  p-5">
+                <div class="col-12 col-md-6">
+                    <h2 class="titulo"><b>CALL US!</b></h2>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p><b>Phone: </b><br />714-363-0006</p>
+                    <p><b>Email: </b><br />support@aztecataxsystems.com</p>
                 </div>
             </div>
         </div>
@@ -199,6 +221,7 @@
             </div>
         </footer>
     </div>
+    <script src="data/txtIndex.js"></script>
 </body>
 
 </html>
@@ -217,5 +240,33 @@
 
     .cont-info {
         font-size: 1.3em;
+    }
+
+    #banner1 {
+        background-image: url(rsc/home/banner1.jpg);
+        background-size: contain;
+        height: 475px;
+    }
+
+    #banner2 {
+        background-image: url(rsc/home/banner2.jpg);
+        background-size: contain;
+        height: 475px;
+    }
+
+    #banner3 {
+        background-image: url(rsc/home/banner3.jpg);
+        background-size: contain;
+        height: 475px;
+    }
+
+    .contenido {
+        color: white;
+        font-size: 16pt;
+    }
+
+    .contenido h2 {
+        font-weight: bold;
+        font-size: xx-large;
     }
 </style>
