@@ -699,6 +699,10 @@ footer {
     color: white;
 }
 
+footer a {
+    color: white;
+    font-size: 18px;
+}
 
 #redes a img{
 
