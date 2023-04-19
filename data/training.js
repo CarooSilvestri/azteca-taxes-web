@@ -324,11 +324,6 @@ function crear_html(prod, container) {
   img_cont.appendChild(img_prod)
   card.appendChild(img_cont)
 
-
-  var badge = document.createElement("span")
-  badge.setAttribute('class', 'badge text-bg-secondary mb-2')
-  badge.innerHTML += prod.type
-
   var texto = document.createElement("div")
   texto.setAttribute("class", "text-card")
 

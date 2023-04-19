@@ -24,9 +24,15 @@ a {
 ul { list-style: none; }
 
 header {
-
     width: 100vw;
     max-width: 100%;
+}
+
+.cont-info {
+    background: #f2b138;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -128,147 +134,7 @@ header {
     margin: 3%;
 }
 
-/* ------------- US SECTION ------------- */
-
-#row {
-
-    background-color: whitesmoke;
-    margin: auto;
-    width: 80%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    line-height: 20px;
-}
-
-#nosotros {
-
-    padding-left: 3%;
-    padding-top: 3%;
-    width: 90%;
-}
-
-.separation {
-
-    width: 40%;
-    border: 1px solid black;
-    background-color: black;
-}
-
-#cerrar {
  
-    float: right;
-}
-
-#cont-lema {
-
-    margin: 5% 0 5% 0;
-}
-
-#lema {
-
-    font-size: 30px;
-    margin: 5%;
-    margin-left: 10%;
-    width: 90%;
-    line-height: 24pt;
-}
-
-/* ------------- SECTIONS ------------- */
-
-#banner-section {
-
-    width: 100%;
-    display: inline-block;
-    background-color: gainsboro;
-    background-image: url(rsc/banner.jpg);
-    background-size: cover;
-    background-position: 1%;
-    background-position-y: 10%;
-    height: fit-content
-}
-
-#banner-section h1 {
-
-    margin: 5%;
-    font-size: 36px;
-    padding-left: 10%;
-    color: #d62a2a;
-}
-
-
-/* ------------- PRODUCTS ------------- */
-
-#cont-menu-tarjetas {
-
-    width: 100%;
-    padding-top: 6%;
-    padding-bottom: 5%;
-    margin: auto;
-} 
-
-/* ACCORDION */
-#cont-acor {
-
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-}
-
-.acordion, #placas {
-
-    background-color: #D8D8D8;
-    color: #444;
-    padding: 10px;
-    width: 100%;
-    margin: 0 auto;
-    border: none;
-    text-align: left;
-    outline: none;
-}
-  
-.acordion:hover, #placas:hover {
-    
-    background-color: #EFAC2A; 
-}
-
-.panel {
-    
-    display: none;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-  
-.cont-panel {
-
-    font-size: 16px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.fondo-panel {
-
-    width: 100%;
-    background-color: whitesmoke;
-    padding: 5%;
-}
-
-.fondo-panel:hover {
-
-    background-color: #f3c15e;
-}
-
-.active {
-
-    background-color: #EFAC2A;
-}
-
-#cont-prod {
-
-    width: 60%;
-} 
 
 
 #card-producto {
@@ -544,39 +410,35 @@ span {
     background-color: #EFAC2A;
 }
 
-/* ------------- CONTACT ------------- */
+/* ------------- SUPPORT ------------- */
 
-#cont-contact {
-    
-    margin: 0 5% 0 5%;
-    padding: 5% 0 7% 0;
+.titulo {
+    font-size: 3em;
 }
 
-#cont-info {
+.cont-info {
+    font-size: 1.3em;
+}
 
-    width: 90%;
-    margin: auto;
-    padding: 2%;
-    background-color: #D9D6D2;
+.orange {
+    color: #f2b138
+}
+
+/* ------------- CONTACT ------------- */
+.content {
+    text-align: left;
+    border-top: 2px solid #f2b138;
+    border-bottom: 2px solid #f2b138;
+}
+
+.col-info {
+    background: #f2b138;
+    font-size: larger;
 }
 
 iframe {
-
     width: 100%;
     height: 100%;
-}
-
-.info {
-
-    padding: 5%;
-    width: 70%;
-    margin: 1% auto;
-    text-align: center;
-}
-
-.info img {
-
-    padding-bottom: 2%;
 }
 
 /* ------------- FOOTER ------------- */
@@ -591,100 +453,6 @@ footer a {
 }
 
 #redes a img{
-
     padding-right: 4%;
 }
 
-#red-social {
-
-    width: 7%;
-}
-
-#sep-footer {
-
-    width: 40%;
-    margin: 2% 0 2% 0;
-    border: 1px gray solid;
-}
-
-#content-footer span {
-
-    padding: 0;
-    margin: 0;
-}
-
-#content-footer span a {
-
-    color: gainsboro;
-}
-
-
-
-/* ------ EXCLUSIONES A LA REGLA ------ */
-@media screen and (max-width: 650px) {
-
-    #cont-banner {
-      margin-top: 13%;
-      margin-left: 10%;
-    }
-
-    #titulo-banner { 
-
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    #cont-ban-text p {
-
-        font-size: 90%;
-    }
-
-    #red-social {
-
-        width: 13%;
-    }
-}
-
-
-@media screen and (min-width: 651px) {
-
-    #cont-banner {
-
-      margin-top: 10%;
-      margin-left: 10%;
-    }
-
-    #cont-ban-text p {
-
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (width: 768px) {
-
-    #cont-banner {
-
-      margin-top: 1%;
-      margin-left: 10%;
-    }
-
-    #red-social {
-
-        width: 13%;
-    }
-}
-
-@media screen and (width: 1024px) {
-
-    #cont-banner {
-
-      margin-top: 1%;
-      margin-left: 10%;
-    }
-
-    #red-social {
-
-        width: 10%;
-    }
-}
