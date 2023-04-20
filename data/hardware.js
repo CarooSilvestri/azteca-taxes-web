@@ -42,7 +42,8 @@ var $hardware = [
       }
     ],
     "note": "Note: This computer does not include a built-in DVD/CD drive.",
-    "price": "$795"
+    "price": "$795",
+    "img": "../rsc/blanc.jpg"
   },
   {
     "id": "2",
@@ -55,7 +56,8 @@ var $hardware = [
         "Windows 10 Home for a familiar and productive computing experience"
       ]
     },
-    "price": "$795"
+    "price": "$795",
+    "img": "../rsc/blanc.jpg"
   },
   {
     "id": "3",
@@ -70,7 +72,8 @@ var $hardware = [
         "Up to 8 GB DDR4"
       ]
     },
-    "price": "$795"
+    "price": "$795",
+    "img": "../rsc/blanc.jpg"
   },
   {
     "id": "4",
@@ -109,7 +112,8 @@ var $hardware = [
         }
       ]
     },
-    "price": "$795"
+    "price": "$795",
+    "img": "../rsc/blanc.jpg"
   },
   {
     "id": "5",
@@ -118,7 +122,8 @@ var $hardware = [
     "description": {
       "overview": "SigLite LCD 1×5 (T-L460-HSB-R) is Topaz’s low-cost, pressure-sensitive electronic signature capture pad with an LCD display and USB connection.",
     },
-    "price": "$190"
+    "price": "$190",
+    "img": "../rsc/blanc.jpg"
   },
   {
     "id": "6",
@@ -127,7 +132,8 @@ var $hardware = [
     "description": {
       "overview": "With this model series, the signature is only viewable on the computer screen. If your application requires customers to view the signature on the pad’s screen, see the SigLite LCD 1×5.",
     },
-    "price": "$125"
+    "price": "$125",
+    "img": "../rsc/blanc.jpg"
   },
   {
     "id": "7",
@@ -136,7 +142,8 @@ var $hardware = [
     "description": {
       "overview": "We provide support for these certified handheld scanners, you are able to capture the taxpayer’s source documents and information to associate them with the appropriate tax return ATS tax Software. Get the power of a bar code scanner, digital camera and document scanner in a single, cost-effective device.",
     },
-    "price": "$349.99"
+    "price": "$349.99",
+    "img": "../rsc/blanc.jpg"
   }
 ]
 
@@ -150,8 +157,6 @@ $(document).ready(function () {
 function cargar_opciones(data, prods) {
 
   $('.btn').click(function () {
-
-    prods = document.getElementById("prods")
     filtrar(data, this.id, prods)
     $('.btn').removeClass("active")
     $(this).addClass("active")
@@ -159,9 +164,10 @@ function cargar_opciones(data, prods) {
 }
 
 function filtrar(data, tipo_prod = "todos", container) {
+  container.innerHTML = ""
+  if (tipo_prod === "todos") { cargar_productos(data, container); return }
   for (var clave in data) {
     if (data[clave].type == tipo_prod) {
-      crear_titulo(container, tipo_prod)
       crear_html(data[clave], container)
     }
   }
@@ -202,13 +208,12 @@ function crear_html(prod, container) {
   texto.appendChild(titulo)
   texto.appendChild(precio)
 
-
   var cont_btn = document.createElement("div")
   cont_btn.setAttribute("class", "d-flex justify-content-around mt-2")
 
   var btn_see_more = document.createElement("button")
   btn_see_more.innerText = "See more"
-  btn_see_more.setAttribute("class", "btn btn-secondary btn-sm")
+  btn_see_more.setAttribute("class", "col-5 btn btn-secondary btn-sm")
   btn_see_more.setAttribute("id", "btn-masprod")
   let pasar_prod = prod
   btn_see_more.addEventListener("click", (e) => {
@@ -217,7 +222,7 @@ function crear_html(prod, container) {
 
   var btn_prod = document.createElement("button")
   btn_prod.innerText = "Buy"
-  btn_prod.setAttribute("class", "btn btn-primary btn-sm")
+  btn_prod.setAttribute("class", "col-5 btn btn-primary btn-sm")
 
   card.appendChild(texto)
   cont_btn.appendChild(btn_see_more)
@@ -290,7 +295,14 @@ function crear_descripcion(prod, col_informacion) {
     for (var elem in prod.description.features) {
       var feat = document.createElement("p")
       feat.innerHTML += "- " + prod.description.features[elem]
+
+      if (prod.description.features[elem].title) {
+        var feat = document.createElement("ul")
+        feat.innerHTML = `<li> <b>${prod.description.features[elem].title}</b><br/>
+        <p>${prod.description.features[elem].desc}</p></li>`
+      }
       features.appendChild(feat)
+
     }
 
     col_informacion.appendChild(features)
@@ -305,7 +317,7 @@ function crear_descripcion(prod, col_informacion) {
 
     for (var elem in prod.specs) {
       var sp = document.createElement("div")
-      sp.innerHTML = `<p><strong>${prod.specs[elem].title}<strong></p>`
+      sp.innerHTML = `<p><strong>${prod.specs[elem].title}</strong></p>`
       sp.innerHTML += `<p>${prod.specs[elem].desc}</p>`
       specs.appendChild(sp)
     }
@@ -317,7 +329,7 @@ function crear_descripcion(prod, col_informacion) {
   btn.setAttribute('class', 'row px-5 mt-3 justify-content-center')
   var btn_prod = document.createElement("button")
   btn_prod.innerText = "Buy"
-  btn_prod.setAttribute("class", "btn btn-primary btn-lg mb-2")
+  btn_prod.setAttribute("class", "w-100 btn btn-primary btn-lg mb-2")
   btn.appendChild(btn_prod)
   col_informacion.appendChild(btn)
 }
@@ -341,7 +353,7 @@ function titulo_modal(cont, prod) {
 function set_img(prod) {
 
   var img_prod = document.createElement("img")
-  img_prod.setAttribute("src", "../rsc/blanc.jpg")
+  img_prod.setAttribute("src", prod.img)
   img_prod.setAttribute("width", "100%")
   img_prod.setAttribute("class", "img-fluid")
   img_prod.setAttribute("alt", prod.name)
@@ -350,7 +362,6 @@ function set_img(prod) {
 
 function crear_titulo(container, prod) {
 
-  container.innerHTML = ""
   var titulo = document.createElement("h2")
   titulo.setAttribute("class", "h2")
   titulo.style.textTransform = "capitalize"

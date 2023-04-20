@@ -21,8 +21,8 @@ var $licencias = [
 
 
 /* INICIO JS FUNCIONES */
-$(document).ready(function() {
-  var taxInfoContainer =document.getElementById("container")
+$(document).ready(function () {
+  var taxInfoContainer = document.getElementById("container")
   cargar_licencias($licencias, taxInfoContainer)
 })
 
@@ -35,8 +35,8 @@ function cargar_licencias(data, container) {
     box.setAttribute('data-aos', 'fade-in')
 
     const imageBox = document.createElement("div")
-    imageBox.classList.add("col-12", "col-md-4")
-    imageBox.innerHTML = `<img src="../rsc/patents/${data[elem].name}.png" />`
+    imageBox.classList.add("col-10", "col-md-4", "align-content-center")
+    imageBox.innerHTML = `<img src="../rsc/patents/${data[elem].name}.png" width="100%" class="mb-5 mb-md-0" />`
 
     const infoBox = document.createElement("div")
     infoBox.classList.add("col-12", "col-md-6")
@@ -47,7 +47,5 @@ function cargar_licencias(data, container) {
     box.append(imageBox)
     box.append(infoBox)
     container.append(box)
-   } 
- }
-
- cargar_licencias()
+  }
+}
