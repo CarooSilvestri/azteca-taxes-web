@@ -30,9 +30,9 @@ header {
 
 .cont-info {
     background: #f2b138;
-    border-radius: 8px;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.2em;
 }
 
 
@@ -414,11 +414,7 @@ span {
 /* ------------- SUPPORT ------------- */
 
 .titulo {
-    font-size: 3em;
-}
-
-.cont-info {
-    font-size: 1.3em;
+    font-size: 2.5em;
 }
 
 .orange {
