@@ -47,10 +47,10 @@
         <div class="row justify-content-center py-2">
             <div class="col-11 col-md-8">
                 <div class="row justify-content-between">
-                    <div class="col-5">
+                    <div class="col-7">
                         <p class="m-0"><strong>DOWNLOAD </strong> DEMO!</p>
                     </div>
-                    <div class="col-2 align-content-end">
+                    <div class="col-3 col-md-2 align-content-end">
                         <div class="row justify-content-between">
                             <a href="https://twitter.com/aztecataxes" target="_blank">
                                 <img src="../rsc/icons/twitter.svg" alt="twitter" />
@@ -69,9 +69,10 @@
     </div>
 
     <!-- Nav Bar -->
-    <nav class="navbar bg-light navbar-expand-sm navbar-light justify-content-center" id="nav-bar">
+    <nav class="navbar bg-light navbar-expand-sm navbar-light justify-content-between justify-content-md-center"
+        id="nav-bar">
         <!-- Logo -->
-        <div id="logo" class="col-2 p-0">
+        <div id="logo" class="col-7 col-md-2 p-0">
             <a href="../index.html" class="navbar-brand">
                 <img width="100%" src="../rsc/logo/logo.png" alt="ATS Logo" />
             </a>
@@ -105,16 +106,33 @@
 
     <!-- Contenedor principal-->
     <div class="container p-0 mt-5 mb-5" id="container">
+        <div class="row justify-content-around align-items-center">
+            <h5 class="mb-3 mb-md-0">I already bought a Course</h5>
+            <div class="col-10 col-md-5">
+                <form>
+                    <div class="row align-content-center">
+                        <div class="col-8">
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Enter code">
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-primary w-100" type="button">Enter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="mb-4 mt-4" />
 
         <div class="row justify-content-around" id="clases">
-
         </div>
+
         <div id="modal">
-            <div class="container-fluid" id="modal-content">
+            <div class="container-fluid rounded" id="modal-content">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-xl-6" id="col-modal-img">
+                    <div class="col-12 col-xl-6" id="col-modal-img">
                     </div>
-                    <div class="col-sm-12 col-md-12 col-xl-6" id="col-modal-text">
+                    <div class="col-12 col-xl-6" id="col-modal-text">
                     </div>
                 </div>
             </div>

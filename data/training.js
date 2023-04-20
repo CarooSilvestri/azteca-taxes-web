@@ -13,12 +13,14 @@ var $training =
       "Tax Cuts and Jobs Acts latest Updates",
       "California Tax Law"
     ],
-    price: "$349"
+    price: "$349",
+    img: "../rsc/blanc-prods.jpg"
   }, {
     id: "2",
     name: "Classroom 60 HR Certification Course",
     description: "This course meets the 60-hour qualifying education requirement imposed by the state of California to become a tax preparer. This course has been approved by the California Tax Education Council (Vendor #2080). After each chapter, the student will complete online review questions and Practice Tax Returns (PTR). PTR’s will have their own set of review questions. Schedule A are prepared with state income tax withholding on line 5 and the additional state-specific taxes such as CASDI. PTR’s are based on what the course has covered so far. CTEC requires the student to take a separate test for the following parts: Ethics, Federal Tax Law and California Tax Law. The ethics final consists of 10 questions on the Ethics Session. California Tax Law final will be at the end of the course after completing the entire sessions. This test will consist of 75 questions. Federal final will be administered after the California Tax Law final and will consist of 215 questions. Which meets CTEC requirements of 5 questions per study hour. You must pass each final with a 70% or better. You will receive a separate certificate for each session.",
-    price: "$595"
+    price: "$595",
+    img: "../rsc/blanc-prods.jpg"
   }, {
     id: "3",
     name: "Online 20 HR Certification Course",
@@ -33,12 +35,15 @@ var $training =
       "Tax Cuts and Jobs Acts latest Updates",
       "California Tax Law"
     ],
-    price: "$299"
+    price: "$299",
+    img: "../rsc/blanc-prods.jpg",
+    img: "../rsc/blanc-prods.jpg"
   }, {
     id: "4",
     name: "Online 60 HR Certification Course",
     description: "This course meets the 60-hour qualifying education requirement imposed by the state of California to become a tax preparer. This course has been approved by the California Tax Education Council (Vendor #2080). After each chapter, the student will complete online review questions and Practice Tax Returns (PTR). PTR’s will have their own set of review questions. Schedule A are prepared with state income tax withholding on line 5 and the additional state-specific taxes such as CASDI. PTR’s are based on what the course has covered so far. CTEC requires the student to take a separate test for the following parts: Ethics, Federal Tax Law and California Tax Law. The ethics final consists of 10 questions on the Ethics Session. California Tax Law final will be at the end of the course after completing the entire sessions. This test will consist of 75 questions. Federal final will be administered after the California Tax Law final and will consist of 215 questions. Which meets CTEC requirements of 5 questions per study hour. You must pass each final with a 70% or better. You will receive a separate certificate for each session.",
-    price: "$595"
+    price: "$595",
+    img: "../rsc/blanc-prods.jpg"
   },
   {
     id: "5",
@@ -51,13 +56,10 @@ var $training =
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$695"
-  }
-  ]
-
-/* 
-
-[{id: "6",
+    price: "$695",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "6",
     name: "Classroom Introduction to Bookkeeping & Corporation Course",
     description: "This classroom course is not a requirement imposed by the state of California to become a tax preparer. This course to introduce you to the basis of bookkeeping with hands on with QuickBooks and  to corporations with examples on Small Business Corporation  (1120s). This classroom course will touch on essentials of bookkeeping and corporations, comparer from Schedule C to corporations and, the theory between 1065, 1120 and 1120s. ( one week bootcamp environment setup).",
     specs: [
@@ -68,13 +70,10 @@ var $training =
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$1495"
-  }
-]
-
-
-id: "7"
-[{
+    price: "$149",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "7",
     name: "Classroom Corporation & Balance Sheet Course",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in corporations theory and hand on. This course review corporation theory, balance sheet, and corporations with examples on Small Business Corporation  (1120s). This classroom course will review corporations, balance sheet, comparer from Schedule C to corporations and, the theory between 1065, 1120 and 1120s. ( one week bootcamp environment setup).",
     specs: [
@@ -85,14 +84,10 @@ id: "7"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$795"
-  }
-]
-
-
-
-id: "8"
-[{
+    price: "$795",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "8",
     name: "Classroom Depreciation & Sch C “Schedule C” Step by Step",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in 1040 returns. This course focus on depreciation and Schedule C with references to 1040, Sch A, and others forms. This classroom course will focus on depreciation and Schedule C ( One day environment setup).",
     specs: [
@@ -102,13 +97,10 @@ id: "8"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$199"
-  }
-]
-
-
-id: "9"
-[{
+    price: "$199",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "9",
     name: "Classroom Depreciation & Sch E “Schedule E” Step by Step",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in 1040 returns. This course focus on depreciation and Schedule E with references to 1040, Sch A, and others forms. This classroom course will focus on depreciation and Schedule E ( One day environment setup).",
     specs: [
@@ -118,13 +110,10 @@ id: "9"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$199"
-  }
-]
-
-
-id: "10"
-[{
+    price: "$199",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "10",
     name: "Classroom Virtual currency & Sch D “Schedule D” Step by Step",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in 1040 returns. This course focus on depreciation and Schedule E with references to 1040, Sch A, and others forms. This classroom course will focus on Virtual Currency and Schedule D ( One day environment setup).",
     specs: [
@@ -134,13 +123,10 @@ id: "10"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch D."
     ],
-    price: "$199"
-  }
-]
-
-
-id: "11"
-[{
+    price: "$199",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "11",
     name: "Recorded Introduction to Corporation Course",
     description: "This classroom course is not a requirement imposed by the state of California to become a tax preparer. This course to introduce you to corporation with examples on Small Business Corporation  (1120s). This classroom course will touch on essentials of corporations, comparer from Schedule C to corporations and, the theory between 1065, 1120 and 1120s.",
     specs: [
@@ -150,13 +136,10 @@ id: "11"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$299"
-  }
-]
-
-
-id: "12"
-[{
+    price: "$299",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "12",
     name: "Recorded Introduction to Bookkeeping and Corporation Course",
     description: "This classroom course is not a requirement imposed by the state of California to become a tax preparer. This course to introduce you to the basis of bookkeeping with hands on with QuickBooks and  to corporations with examples on Small Business Corporation  (1120s). This classroom course will touch on essentials of bookkeeping and corporations, comparer from Schedule C to corporations and, the theory between 1065, 1120 and 1120s. ( one week bootcamp environment setup).",
     specs: [
@@ -167,14 +150,10 @@ id: "12"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$595"
-  }
-]
-
-
-
-id: "13"
-[{
+    price: "$595",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "13",
     name: "Recorded Corporation & Balance Sheet Course",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in corporations theory and hand on. This course review corporation theory, balance sheet, and corporations with examples on Small Business Corporation  (1120s). This classroom course will review corporations, balance sheet, comparer from Schedule C to corporations and, the theory between 1065, 1120 and 1120s. ( one week bootcamp environment setup).",
     specs: [
@@ -185,13 +164,10 @@ id: "13"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$399"
-  }
-]
-
-
-id: "14"
-[{
+    price: "$399",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "14",
     name: "Recorded Depreciation & Sch C “Schedule C” Step by Step",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in 1040 returns. This course focus on depreciation and Schedule C with references to 1040, Sch A, and others forms. This classroom course will focus on depreciation and Schedule C ( One day environment setup).",
     specs: [
@@ -201,14 +177,10 @@ id: "14"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$99"
-  }
-]
-
-
-
-id: "15"
-[{
+    price: "$99",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "15",
     name: "Recorded Depreciation & Sch E “Schedule E” Step by Step",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in 1040 returns. This course focus on depreciation and Schedule E with references to 1040, Sch A, and others forms. This classroom course will focus on depreciation and Schedule E ( One day environment setup).",
     specs: [
@@ -218,14 +190,10 @@ id: "15"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch E."
     ],
-    price: "$99"
-  }
-]
-
-
-
-id: "16"
-[{
+    price: "$99",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "16",
     name: "Recorded Virtual currency & Sch D “Schedule D” Step by Step",
     description: "This classroom course is designed for students that Practice Tax Returns (PTR) with experience in 1040 returns. This course focus on depreciation and Schedule E with references to 1040, Sch A, and others forms. This classroom course will focus on Virtual Currency and Schedule D ( One day environment setup).",
     specs: [
@@ -235,21 +203,15 @@ id: "16"
       "The student will have the opportunity to ask questions and get answers by an Enroll Agent (EA).",
       "Recommended but not required to be Practice Tax Returns (PTR) with experience in 1040, Sch A, Sch C, Sch D."
     ],
-    price: "$99"
-  }
-]
-
-
-id: "17"
-[{
+    price: "$99",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "17",
     name: "Recorded Seminar by Pascual",
-    price: "$99"
-  }
-]
-
-
-id: "18"
-[{
+    price: "$99",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "18",
     name: "Recorded 20 HR Certification Course by Pascual",
     description: "This course has been approved by the California Tax Education Council (2080-QE-001), which fulfills the 20-hour qualifying education requirement imposed by the state of California to become a tax preparer. A listing of additional requirements to register as a tax preparer may be obtained by contacting CTEC at P.O. Box 2890, Sacramento, CA, 95812-2890 or 1-877-850-2832 or visiting the web page www.CTEC.org. This course allows the student to complete their 20-hours. Topics Include:",
     specs: [
@@ -262,39 +224,28 @@ id: "18"
       "Tax Cuts and Jobs Acts latest Updates",
       "California Tax Law"
     ],
-    price: "$199"
-  }
-]
-
-
-
-id: "19"
-[{
+    price: "$199",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "19",
     name: "Recorded 60 HR Certification Course by Lazaro",
     description: "This course meets the 60-hour qualifying education requirement imposed by the state of California to become a tax preparer. This course has been approved by the California Tax Education Council (Vendor #2080). After each chapter, the student will complete online review questions and Practice Tax Returns (PTR). PTR’s will have their own set of review questions. Schedule A are prepared with state income tax withholding on line 5 and the additional state-specific taxes such as CASDI. PTR’s are based on what the course has covered so far. CTEC requires the student to take a separate test for the following parts: Ethics, Federal Tax Law and California Tax Law. The ethics final consists of 10 questions on the Ethics Session. California Tax Law final will be at the end of the course after completing the entire sessions. This test will consist of 75 questions. Federal final will be administered after the California Tax Law final and will consist of 215 questions. Which meets CTEC requirements of 5 questions per study hour. You must pass each final with a 70% or better. You will receive a separate certificate for each session.",
-    price: "$399"
-  }
-]
-
-
-
-id: "20"
-[{
+    price: "$399",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "20",
     name: "Recorded 60 HR Certification Course by Carmen2",
     description: "This course meets the 60-hour qualifying education requirement imposed by the state of California to become a tax preparer. This course has been approved by the California Tax Education Council (Vendor #2080). After each chapter, the student will complete online review questions and Practice Tax Returns (PTR). PTR’s will have their own set of review questions. Schedule A are prepared with state income tax withholding on line 5 and the additional state-specific taxes such as CASDI. PTR’s are based on what the course has covered so far. CTEC requires the student to take a separate test for the following parts: Ethics, Federal Tax Law and California Tax Law. The ethics final consists of 10 questions on the Ethics Session. California Tax Law final will be at the end of the course after completing the entire sessions. This test will consist of 75 questions. Federal final will be administered after the California Tax Law final and will consist of 215 questions. Which meets CTEC requirements of 5 questions per study hour. You must pass each final with a 70% or better. You will receive a separate certificate for each session.",
-    price: "$399"
-  }
-]
-
-
-
-id: "21"
-[{
+    price: "$399",
+    img: "../rsc/blanc-prods.jpg"
+  }, {
+    id: "21",
     name: "Recorded 60 HR Certification Course by Rosa",
     description: "This course meets the 60-hour qualifying education requirement imposed by the state of California to become a tax preparer. This course has been approved by the California Tax Education Council (Vendor #2080). After each chapter, the student will complete online review questions and Practice Tax Returns (PTR). PTR’s will have their own set of review questions. Schedule A are prepared with state income tax withholding on line 5 and the additional state-specific taxes such as CASDI. PTR’s are based on what the course has covered so far. CTEC requires the student to take a separate test for the following parts: Ethics, Federal Tax Law and California Tax Law. The ethics final consists of 10 questions on the Ethics Session. California Tax Law final will be at the end of the course after completing the entire sessions. This test will consist of 75 questions. Federal final will be administered after the California Tax Law final and will consist of 215 questions. Which meets CTEC requirements of 5 questions per study hour. You must pass each final with a 70% or better. You will receive a separate certificate for each session.",
-    price: "$399"
+    price: "$399",
+    img: "../rsc/blanc-prods.jpg"
   }
-] */
+  ]
 
 
 $(document).ready(function () {
@@ -315,17 +266,17 @@ function crear_html(prod, container) {
 
   var card = document.createElement("div")
   card.setAttribute("id", "card-producto")
-  card.setAttribute("class", "col-10 col-md-3 m-2")
+  card.setAttribute("class", "col-8  col-md-3 m-2")
 
   var img_cont = document.createElement("div")
-  img_cont.setAttribute("class", "cont-img")
+  img_cont.setAttribute("class", "cont-img d-flex")
 
   var img_prod = set_img(prod)
   img_cont.appendChild(img_prod)
   card.appendChild(img_cont)
 
   var texto = document.createElement("div")
-  texto.setAttribute("class", "text-card")
+  texto.setAttribute("class", "text-card mt-3")
 
   var titulo = document.createElement("h2")
   titulo.innerHTML += prod.name;
@@ -334,7 +285,6 @@ function crear_html(prod, container) {
   precio.innerHTML += prod.price;
   precio.setAttribute("style", "font-weight: 500")
 
-  texto.appendChild(badge)
   texto.appendChild(titulo)
   texto.appendChild(precio)
 
@@ -344,7 +294,7 @@ function crear_html(prod, container) {
 
   var btn_see_more = document.createElement("button")
   btn_see_more.innerText = "See more"
-  btn_see_more.setAttribute("class", "btn btn-secondary btn-sm")
+  btn_see_more.setAttribute("class", "col-4 btn btn-secondary btn-sm")
   btn_see_more.setAttribute("id", "btn-masprod")
   let pasar_prod = prod
   btn_see_more.addEventListener("click", (e) => {
@@ -353,7 +303,7 @@ function crear_html(prod, container) {
 
   var btn_prod = document.createElement("button")
   btn_prod.innerText = "Buy"
-  btn_prod.setAttribute("class", "btn btn-primary btn-sm")
+  btn_prod.setAttribute("class", "col-4 btn btn-primary btn-sm")
 
   card.appendChild(texto)
   cont_btn.appendChild(btn_see_more)
@@ -412,37 +362,21 @@ function crear_descripcion(prod, col_informacion) {
 
   /* Armo la descripción del producto */
   var description = document.createElement("div")
-  description.setAttribute('class', 'row px-5')
-  description.innerHTML += prod.description.overview
+  description.setAttribute('class', 'row px-4')
+  description.innerHTML += prod.description
   col_informacion.appendChild(description)
-
-  if (prod.description.features) {
-    var features = document.createElement("div")
-    features.setAttribute('class', 'row px-5 mt-3')
-    var t = document.createElement('h5')
-    t.innerHTML = 'Features'
-    features.appendChild(t)
-
-    for (var elem in prod.description.features) {
-      var feat = document.createElement("p")
-      feat.innerHTML += "- " + prod.description.features[elem]
-      features.appendChild(feat)
-    }
-
-    col_informacion.appendChild(features)
-  }
 
   if (prod.specs) {
     var specs = document.createElement("div")
-    specs.setAttribute('class', 'row px-5 mt-3')
+    specs.setAttribute('class', 'row px-4 mt-3')
     var t = document.createElement('h5')
     t.innerHTML = 'Specs:'
     specs.appendChild(t)
+    var sp = document.createElement("ul")
 
     for (var elem in prod.specs) {
-      var sp = document.createElement("div")
-      sp.innerHTML = `<p><strong>${prod.specs[elem].title}<strong></p>`
-      sp.innerHTML += `<p>${prod.specs[elem].desc}</p>`
+      var sp = document.createElement("li")
+      sp.innerHTML = `${prod.specs[elem]}`
       specs.appendChild(sp)
     }
 
@@ -453,7 +387,7 @@ function crear_descripcion(prod, col_informacion) {
   btn.setAttribute('class', 'row px-5 mt-3 justify-content-center')
   var btn_prod = document.createElement("button")
   btn_prod.innerText = "Buy"
-  btn_prod.setAttribute("class", "btn btn-primary btn-lg")
+  btn_prod.setAttribute("class", "btn btn-primary btn-lg w-100 mt-2 mb-2")
   btn.appendChild(btn_prod)
   col_informacion.appendChild(btn)
 }
@@ -477,10 +411,10 @@ function titulo_modal(cont, prod) {
 function set_img(prod) {
 
   var img_prod = document.createElement("img")
-  img_prod.setAttribute("src", "../rsc/blanc-prods.jpg")
+  img_prod.setAttribute("src", prod.img)
   img_prod.setAttribute("width", "100%")
   img_prod.setAttribute("class", "img-fluid")
-  img_prod.setAttribute("alt", prod)
+  img_prod.setAttribute("alt", prod.name)
   return img_prod
 }
 

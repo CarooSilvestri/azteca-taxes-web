@@ -159,7 +159,7 @@ header {
     
 #card-producto img {
 
-    object-fit: contain;
+    object-fit: cover;
 }
 
 @keyframes zoom-in-card {
@@ -199,6 +199,7 @@ header {
     background-color: grey;
     color: white
 }
+
 
 #modal {
 
@@ -246,7 +247,7 @@ header {
 
     padding-bottom: 0;
     overflow: auto;
-    height: 450px;
+    height: 500px;
 }
 
 #div_tit {
