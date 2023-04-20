@@ -1,7 +1,7 @@
 <!-- 
     AZTECA TAX WEB
     VERSION: 1.0
-    ÚLTIMA ACTUALIZACIÓN: 14/04/2023
+    ÚLTIMA ACTUALIZACIÓN: 20/04/2023
     ESTADO: Terminado
 -->
 
@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 
-    <link rel="icon" type="image/x-icon" href="rsc/logo.png" />
+    <link rel="icon" type="image/x-icon" href="/rsc/logo/logo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,28 +124,28 @@
 
         <h1 class="m-0 my-5" style="color:#489cbd">Our offer</h1>
 
-        <div class="row p-5 m-0" id="banner1" data-aos="fade-left">
+        <div class="row p-5 m-0" id="banner1" data-aos="fade-right">
             <div class="col-6 contenido">
                 <h2 class="mb-4" id="titulo-b1"></h2>
-                <div id="cont-b1"></div>
+                <div id="cont-b1" class="d-none"></div>
             </div>
         </div>
         <div class="row p-5 m-0" id="banner2" data-aos="fade-right">
             <div class="col-6 contenido">
                 <h2 class="mb-4" id="titulo-b2"></h2>
-                <div id="cont-b2"></div>
+                <div id="cont-b2" class="d-none"></div>
             </div>
         </div>
-        <div class="row p-5 m-0" id="banner3" data-aos="fade-left">
+        <div class="row p-5 m-0" id="banner3" data-aos="fade-right">
             <div class="col-6 contenido">
                 <h2 class="mb-4" id="titulo-b3"></h2>
-                <div id="cont-b3"></div>
+                <div id="cont-b3" class="d-none"></div>
             </div>
         </div>
 
-        <div class="row justify-content-center text-center my-5">
-            <div class="col-8">
-                <div class="row align-items-center cont-info  p-5">
+        <div class="row m-0 justify-content-center text-center my-5">
+            <div class="col-12 col-md-8">
+                <div class="row align-items-center cont-info p-2 py-5 rounded p-md-5">
                     <div class="col-12 col-md-6">
                         <h2 class="titulo"><b>CALL US!</b></h2>
                     </div>
@@ -228,36 +228,25 @@
 </html>
 
 <style>
-    .cont-info {
-        background: #f2b138;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .titulo {
         font-size: 3em;
     }
 
-    .cont-info {
-        font-size: 1.3em;
-    }
+
 
     #banner1 {
         background-image: url(rsc/home/banner1.jpg);
         background-size: cover;
-        height: 475px;
     }
 
     #banner2 {
         background-image: url(rsc/home/banner2.jpg);
         background-size: cover;
-        height: 475px;
     }
 
     #banner3 {
         background-image: url(rsc/home/banner3.jpg);
         background-size: cover;
-        height: 475px;
     }
 
     .contenido {
