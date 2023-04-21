@@ -119,7 +119,7 @@ function cargar_desktop(data, cont) {
     var rowInner = document.createElement('div')
     rowInner.setAttribute("class", "row m-0  justify-content-between align-items-center p-3")
     var col4inner = document.createElement('div')
-    col4inner.setAttribute("class", "col-5 orange font-weight-bold")
+    col4inner.setAttribute("class", "col-12 col-md-5 orange font-weight-bold")
 
     var tit = document.createElement('h2')
     tit.setAttribute("class", " font-weight-bold")
@@ -127,7 +127,7 @@ function cargar_desktop(data, cont) {
     col4inner.appendChild(tit)
 
     var col8inner = document.createElement('div')
-    col8inner.setAttribute("class", "col-7")
+    col8inner.setAttribute("class", "col-12 col-md-7")
 
     var desc = document.createElement('p')
     desc.innerHTML = data[0].tittles[elem].d
@@ -153,7 +153,7 @@ function cargar_online(data, cont) {
     var rowInner = document.createElement('div')
     rowInner.setAttribute("class", "row m-0  justify-content-between align-items-center p-3")
     var col4inner = document.createElement('div')
-    col4inner.setAttribute("class", "col-5 orange font-weight-bold")
+    col4inner.setAttribute("class", "col-12 col-md-5 orange font-weight-bold")
 
     var tit = document.createElement('h2')
     tit.setAttribute("class", " font-weight-bold")
@@ -161,7 +161,7 @@ function cargar_online(data, cont) {
     col4inner.appendChild(tit)
 
     var col8inner = document.createElement('div')
-    col8inner.setAttribute("class", "col-7")
+    col8inner.setAttribute("class", "col-12 col-md-7")
 
     var desc = document.createElement('p')
     desc.innerHTML = data[1].tittles[elem].d
@@ -198,7 +198,7 @@ function cargar_corp(data, cont) {
     var rowInner = document.createElement('div')
     rowInner.setAttribute("class", "row m-0  justify-content-between align-items-center p-3")
     var col4inner = document.createElement('div')
-    col4inner.setAttribute("class", "col-5 orange font-weight-bold")
+    col4inner.setAttribute("class", "col-12 col-md-5 orange font-weight-bold")
 
     var tit = document.createElement('h2')
     tit.setAttribute("class", " font-weight-bold")
@@ -206,7 +206,7 @@ function cargar_corp(data, cont) {
     col4inner.appendChild(tit)
 
     var col8inner = document.createElement('div')
-    col8inner.setAttribute("class", "col-7")
+    col8inner.setAttribute("class", "col-12 col-md-7")
 
     var desc = document.createElement('p')
     desc.innerHTML = data[2].tittles[elem].points
