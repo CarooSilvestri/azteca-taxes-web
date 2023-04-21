@@ -81,7 +81,7 @@ $(document).ready(function () {
     }
     var cont_btn3 = document.createElement('div')
     add_btn(cont_btn3, "pages/software.html", "Auditions Solutions")
-    descb1.appendChild(cont_btn3)
+    descb3.appendChild(cont_btn3)
 })
 
 
