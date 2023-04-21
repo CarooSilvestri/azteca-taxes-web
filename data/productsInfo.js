@@ -172,6 +172,7 @@ function cargar_online(data, cont) {
     rowInner.appendChild(col8inner)
     col12.appendChild(rowInner)
   }
+
   row.appendChild(col12)
   cont.appendChild(row)
 }
@@ -186,7 +187,7 @@ function cargar_corp(data, cont) {
   col12.setAttribute("class", "col-12 ")
 
   var rowDesq = document.createElement('div')
-  rowDesq.setAttribute("class", "row")
+  rowDesq.setAttribute("class", "row m-0 px-5 mt-3 text-center")
 
   var desc = document.createElement('p')
   desc.innerHTML = data[2].description
