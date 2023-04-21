@@ -53,6 +53,9 @@ $(document).ready(function () {
         p.innerHTML = "• " + $banners[0].points[elem]
         descb1.appendChild(p)
     }
+    var cont_btn = document.createElement('div')
+    add_btn(cont_btn, "pages/software.html", "ATS Software")
+    descb1.appendChild(cont_btn)
 
     var titb2 = document.getElementById("titulo-b2")
     titb2.innerHTML = $banners[1].title
@@ -63,7 +66,9 @@ $(document).ready(function () {
         p.innerHTML = "• " + $banners[1].points[elem]
         descb2.appendChild(p)
     }
-
+    var cont_btn2 = document.createElement('div')
+    add_btn(cont_btn2, "pages/training.html", "ATS Tax Training")
+    descb2.appendChild(cont_btn2)
 
     var titb3 = document.getElementById("titulo-b3")
     titb3.innerHTML = $banners[2].title
@@ -74,5 +79,17 @@ $(document).ready(function () {
         p.innerHTML = "• " + $banners[2].points[elem]
         descb3.appendChild(p)
     }
+    var cont_btn3 = document.createElement('div')
+    add_btn(cont_btn3, "pages/software.html", "Auditions Solutions")
+    descb1.appendChild(cont_btn3)
 })
 
+
+function add_btn(cont, link, text) {
+    var btn = document.createElement("a")
+    btn.setAttribute("class", "btn btn-primary btn-lg  m-0")
+    btn.setAttribute("href", link)
+    btn.setAttribute("role", "button")
+    btn.innerHTML = text
+    cont.appendChild(btn)
+}
