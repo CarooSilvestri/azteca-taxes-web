@@ -67,7 +67,7 @@ $(document).ready(function () {
         descb2.appendChild(p)
     }
     var cont_btn2 = document.createElement('div')
-    add_btn(cont_btn2, "pages/training.html", "ATS Tax Training")
+    add_btn(cont_btn2, "pages/software.html", "ATS Tax Training")
     descb2.appendChild(cont_btn2)
 
     var titb3 = document.getElementById("titulo-b3")
