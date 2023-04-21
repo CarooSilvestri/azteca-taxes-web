@@ -237,12 +237,6 @@ header {
     padding: 0;
 }
 
-#media-video {
-
-    width: 100%;
-    padding: 1%;
-}
-
 #col-modal-text {
 
     padding-bottom: 0;
@@ -263,18 +257,6 @@ header {
     width: 95%;
 }
 
-#tabla {
-
-    padding: 0 4%;
-}
-
-.tabla {
-
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-
 #col-modal {
 
     padding: 0 6%;
@@ -286,92 +268,12 @@ header {
     font-weight: bold;
 }
 
-td:nth-child(even){
-
-    width: fit-content;
-    padding: 2%;
-    border-left: 1px solid rgba(128, 128, 128, 0.705);
-}
-
-tr:nth-child(even) {
-
-    border-bottom: 1px solid rgba(128, 128, 128, 0.705);
-    border-top:  1px solid rgba(128, 128, 128, 0.705);
-}
-
-#column-tablero {
-
-    margin: 2%;
-    height: auto;
-}
 
 .elements-list {
     
     margin: 3%;
     font-size: 15px;
     list-style:disc;
-}
-
-#acordion-modal {
-
-    width: 100%;
-    margin: auto;
-    margin-top: 4%;
-    margin-bottom: 2%;
-}
-
-.panel-modal {
-
-    background-color: #E8E8E8;
-    display: none;
-    height: auto;
-    padding: 2%;
-}
-
-.panel-mod-list {
-
-    width: 95%;
-    margin: auto;
-}
-
-.panel-mod-list p {
-
-    margin: 0;
-}
-
-.panel-mod-list .col-12{
-   
-    padding: 1%;
-}
-
-#color {
-
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#color-picker {
-
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-}
-
-span {
-
-    width: 100%;
-    margin-left: 2%;
-    color: grey;
-}
-
-.color-btn {
-
-    border-radius: 50%;
-    border: 1px solid lightgray;
-    width: 15%;
-    height: 18px;
-    margin: 2%;      
 }
 
  /* The Close Button */
@@ -391,25 +293,6 @@ span {
     cursor: pointer;
 }
 
-.descargable {
-
-    padding: 3%;
-    background-color: lightgray;
-    font-size: 14pt;
-    margin-top: 5%;
-    animation-name: zoom-in-card;
-    animation-duration: 0.5s;
-}
-
-.descargable img {
-
-    margin: 1% 2% 0 2%;
-}
-
-.descargable:hover {
-
-    background-color: #EFAC2A;
-}
 
 /* ------------- SUPPORT ------------- */
 

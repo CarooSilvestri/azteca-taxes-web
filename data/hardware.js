@@ -43,7 +43,7 @@ var $hardware = [
     ],
     "note": "Note: This computer does not include a built-in DVD/CD drive.",
     "price": "$795",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   },
   {
     "id": "2",
@@ -57,7 +57,7 @@ var $hardware = [
       ]
     },
     "price": "$795",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   },
   {
     "id": "3",
@@ -73,7 +73,7 @@ var $hardware = [
       ]
     },
     "price": "$795",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   },
   {
     "id": "4",
@@ -113,7 +113,7 @@ var $hardware = [
       ]
     },
     "price": "$795",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   },
   {
     "id": "5",
@@ -123,7 +123,7 @@ var $hardware = [
       "overview": "SigLite LCD 1×5 (T-L460-HSB-R) is Topaz’s low-cost, pressure-sensitive electronic signature capture pad with an LCD display and USB connection.",
     },
     "price": "$190",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   },
   {
     "id": "6",
@@ -133,7 +133,7 @@ var $hardware = [
       "overview": "With this model series, the signature is only viewable on the computer screen. If your application requires customers to view the signature on the pad’s screen, see the SigLite LCD 1×5.",
     },
     "price": "$125",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   },
   {
     "id": "7",
@@ -143,7 +143,7 @@ var $hardware = [
       "overview": "We provide support for these certified handheld scanners, you are able to capture the taxpayer’s source documents and information to associate them with the appropriate tax return ATS tax Software. Get the power of a bar code scanner, digital camera and document scanner in a single, cost-effective device.",
     },
     "price": "$349.99",
-    "img": "../rsc/blanc.jpg"
+    "img": "../rsc/blanc-prods.jpg"
   }
 ]
 

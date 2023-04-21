@@ -30,11 +30,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -101,31 +101,130 @@
 
     <!-- Banner -->
     <header class="sectionTitle">
-        <h1>Software</h1>
+        <h1><span class="orange">Industry leading</span> tax software</h1>
     </header>
 
     <!-- Contenedor principal-->
     <div class="container p-3" id="container">
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+        <div class="container p-3" id="container">
+            <nav class="mt-5">
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="nav-desktop-tab" data-bs-toggle="tab" href="#nav-desktop" role="tab"
+                        aria-controls="nav-desktop" aria-selected="true">ATS 1040 Desktop</a>
+
+                    <a class="nav-link" id="nav-online-tab" data-bs-toggle="tab" href="#nav-online" role="tab"
+                        aria-controls="nav-online" aria-selected="false">ATS 1040 Online</a>
+
+                    <a class="nav-link" id="nav-corp-tab" data-bs-toggle="tab" href="#nav-corp" role="tab"
+                        aria-controls="nav-corp" aria-selected="false">ATS Corpotations</a>
+
+                    <a class="nav-link" id="nav-partner-tab" data-bs-toggle="tab" href="#nav-partner" role="tab"
+                        aria-controls="nav-partner" aria-selected="false">ATS Partners</a>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-desktop" role="tabpanel"
+                    aria-labelledby="nav-desktop-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../rsc/banners_prods/ATS 1040 Desktop.jpg" class="img-fluid" width="100%" />
+                        </div>
+                    </div>
+                    <div class="row m-0 p-3" id="content-desktop">
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="nav-online" role="tabpanel" aria-labelledby="nav-online-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../rsc/banners_prods/ATS 1040 Online.jpg" class="img-fluid" width="100%" />
+                        </div>
+                        <div class="row m-0 p-3" id="content-online">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-corp" role="tabpanel" aria-labelledby="nav-corp-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../rsc/banners_prods/ATS Corporations.jpg" class="img-fluid" width="100%" />
+                        </div>
+                        <div class="row m-0 p-3" id="content-corp">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab"
+                    tabindex="0">
+                    <div class="row m-0 p-5 text-center">
+                        <h1 class="text-center align-self-center" style="color:black">ATS Partners</h1>
+                        <p>
+                            Our Partnership Packages are designed for tax preparers who have not obtained their own
+                            EFIN. If you are new to the tax business or looking to branch off and start your own tax
+                            business this is a great package to start with. We offer 60/40, 70/30, 80/20 and 90/10
+                            splits in favor of the partner with no EFIN required. Many of our current partners are
+                            former employees of H&R Block, Jackson Hewitt, Liberty Tax, and smaller tax companies
+                            looking to start their own tax preparation business.
+                        </p>
+                    </div>
+                    <div class="row m-0 text-center justify-content-around">
+                        <div class="col-3">
+                            <div class="row">
+                                STARTER PACKAGE
+                                (70% / 30% )
+                                $495
+                            </div>
+                            <div class="row">
+                                Buy ATS Software 2020 and get 2019 FREE. Start Your Own Tax Preparation Business TODAY!
+                                Revenue Split 70% / 30%
+                                PTIN Required
+                            </div>
+                            <div class="row">
+
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                ADVANCED PACKAGE
+                                (80% / 20% )
+                                $795
+                            </div>
+                            <div class="row">
+                                Buy ATS Software 2020 and get 2019 FREE. Start Your Own Tax Preparation Business TODAY!
+                                Revenue Split 70% / 30%
+                                PTIN Required
+                            </div>
+                            <div class="row">
+
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                PROFESSIONAL PACKAGE
+                                (90% / 10% )
+                                $1295
+                            </div>
+                            <div class="row">
+                                Buy ATS Software 2020 and get 2019 FREE. Start Your Own Tax Preparation Business TODAY!
+                                Revenue Split 90% / 10%
+                                PTIN Required
+                            </div>
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
-                tabindex="0">.skdlaskñlkasñl..</div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                ...</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                ...</div>
-            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
-                tabindex="0">...</div>
         </div>
+
+    </div>
+    <script src="../data/productsInfo.js"></script>
     </div>
     <!-- Footer -->
     <div class="container-fluid p-0" class="footer">

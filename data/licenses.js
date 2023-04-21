@@ -31,7 +31,7 @@ function cargar_licencias(data, container) {
 
   for (var elem in data) {
     const box = document.createElement("div");
-    box.classList.add('row', 'cuadro', 'my-5', 'p-3')
+    box.classList.add('row', 'cuadro', 'my-5', 'p-3', "justify-content-around")
     box.setAttribute('data-aos', 'fade-in')
 
     const imageBox = document.createElement("div")
@@ -39,7 +39,7 @@ function cargar_licencias(data, container) {
     imageBox.innerHTML = `<img src="../rsc/patents/${data[elem].name}.png" width="100%" class="mb-5 mb-md-0" />`
 
     const infoBox = document.createElement("div")
-    infoBox.classList.add("col-12", "col-md-6")
+    infoBox.classList.add("col-12", "col-md-7")
     infoBox.innerHTML = `<p>${data[elem].description}</p>
     <p><b>${data[elem].subtitle}</b></p>
     <p class="call">Call us now and learn how to get your CTEC with our help!<br>

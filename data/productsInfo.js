@@ -1,4 +1,4 @@
-[
+var $products_info = [
   {
     "id": "1",
     "name": "ATS 1040 Desktop",
@@ -96,3 +96,125 @@
     "tittles": []
   }
 ]
+
+$(document).ready(function () {
+  var contDestop = document.getElementById("content-desktop")
+  cargar_desktop($products_info, contDestop)
+
+  var contOnline = document.getElementById("content-online")
+  cargar_online($products_info, contOnline)
+
+  var contCorp = document.getElementById("content-corp")
+  cargar_corp($products_info, contCorp)
+})
+
+function cargar_desktop(data, cont) {
+  var row = document.createElement('div')
+  row.setAttribute("class", "row")
+  var col12 = document.createElement('div')
+  col12.setAttribute("class", "col-12 ")
+
+  for (var elem in data[0].tittles) {
+
+    var rowInner = document.createElement('div')
+    rowInner.setAttribute("class", "row m-0  justify-content-between align-items-center p-3")
+    var col4inner = document.createElement('div')
+    col4inner.setAttribute("class", "col-5 orange font-weight-bold")
+
+    var tit = document.createElement('h2')
+    tit.setAttribute("class", " font-weight-bold")
+    tit.innerHTML = data[0].tittles[elem].t
+    col4inner.appendChild(tit)
+
+    var col8inner = document.createElement('div')
+    col8inner.setAttribute("class", "col-7")
+
+    var desc = document.createElement('p')
+    desc.innerHTML = data[0].tittles[elem].d
+
+    col8inner.appendChild(desc)
+
+    rowInner.appendChild(col4inner)
+    rowInner.appendChild(col8inner)
+    col12.appendChild(rowInner)
+  }
+  row.appendChild(col12)
+  cont.appendChild(row)
+}
+
+function cargar_online(data, cont) {
+  var row = document.createElement('div')
+  row.setAttribute("class", "row")
+  var col12 = document.createElement('div')
+  col12.setAttribute("class", "col-12 ")
+
+  for (var elem in data[1].tittles) {
+
+    var rowInner = document.createElement('div')
+    rowInner.setAttribute("class", "row m-0  justify-content-between align-items-center p-3")
+    var col4inner = document.createElement('div')
+    col4inner.setAttribute("class", "col-5 orange font-weight-bold")
+
+    var tit = document.createElement('h2')
+    tit.setAttribute("class", " font-weight-bold")
+    tit.innerHTML = data[1].tittles[elem].t
+    col4inner.appendChild(tit)
+
+    var col8inner = document.createElement('div')
+    col8inner.setAttribute("class", "col-7")
+
+    var desc = document.createElement('p')
+    desc.innerHTML = data[1].tittles[elem].d
+
+    col8inner.appendChild(desc)
+
+    rowInner.appendChild(col4inner)
+    rowInner.appendChild(col8inner)
+    col12.appendChild(rowInner)
+  }
+  row.appendChild(col12)
+  cont.appendChild(row)
+}
+
+
+function cargar_corp(data, cont) {
+
+  var row = document.createElement('div')
+  row.setAttribute("class", "row")
+
+  var col12 = document.createElement('div')
+  col12.setAttribute("class", "col-12 ")
+
+  var rowDesq = document.createElement('div')
+  rowDesq.setAttribute("class", "row")
+
+  var desc = document.createElement('p')
+  desc.innerHTML = data[2].description
+  rowDesq.appendChild(desc)
+  col12.appendChild(rowDesq)
+  for (var elem in data[2].tittles) {
+
+    var rowInner = document.createElement('div')
+    rowInner.setAttribute("class", "row m-0  justify-content-between align-items-center p-3")
+    var col4inner = document.createElement('div')
+    col4inner.setAttribute("class", "col-5 orange font-weight-bold")
+
+    var tit = document.createElement('h2')
+    tit.setAttribute("class", " font-weight-bold")
+    tit.innerHTML = data[2].tittles[elem].t
+    col4inner.appendChild(tit)
+
+    var col8inner = document.createElement('div')
+    col8inner.setAttribute("class", "col-7")
+
+    var desc = document.createElement('p')
+    desc.innerHTML = data[2].tittles[elem].points
+    col8inner.appendChild(desc)
+
+    rowInner.appendChild(col4inner)
+    rowInner.appendChild(col8inner)
+    col12.appendChild(rowInner)
+  }
+  row.appendChild(col12)
+  cont.appendChild(row)
+}
